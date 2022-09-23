@@ -8,10 +8,11 @@
         class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
         routerLink="/dashboard/home"
         routerLinkActive="active"
-        ><img class="nav-icon" src="/assets/images/home-icon.svg" alt="home icon" /><span
-          class="ml-1"
-          >Home</span
-        ></a
+        ><img
+          class="nav-icon"
+          src="/assets/images/home-icon.svg"
+          alt="home icon"
+        /><span class="ml-1">Home</span></a
       >
     </li>
     <li>
@@ -19,10 +20,11 @@
         class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
         routerLink="/dashboard/server"
         routerLinkActive="active"
-        ><img class="nav-icon" src="/assets/images/server-icon.svg" alt="server icon" /><span
-          class="ml-1"
-          >Server</span
-        ></a
+        ><img
+          class="nav-icon"
+          src="/assets/images/server-icon.svg"
+          alt="server icon"
+        /><span class="ml-1">Server</span></a
       >
     </li>
     <li>
@@ -30,14 +32,17 @@
         class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
         routerLink="/dashboard/application"
         routerLinkActive="active"
-        ><img class="nav-icon" src="/assets/images/app-icon.svg" alt="app icon" /><span
-          class="ml-1"
-          >Application</span
-        ></a
+        ><img
+          class="nav-icon"
+          src="/assets/images/app-icon.svg"
+          alt="app icon"
+        /><span class="ml-1">Application</span></a
       >
     </li>
   </ul>
   <div>
-    <button class="btn btn-primary px-4">Check Health Status</button>
+    <button class="btn btn-primary px-4" (click)="openDialog()">
+      Check Health Status
+    </button>
   </div>
 </nav>

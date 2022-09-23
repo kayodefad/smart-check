@@ -1,0 +1,30 @@
+<div class="row mt-3">
+  <div class="col-3">
+    {{ title }}
+  </div>
+  <div class="col-7">
+    <div>
+      <input
+        class="mr-2 border border-primary"
+        type="checkbox"
+        name="all"
+        id="all"
+      />
+      <label for="all">All {{ title }}s</label>
+    </div>
+    <div class="mt-1">Select {{ title }}s</div>
+    <ul class="list border rounded px-4 py-3 mt-2">
+      <li *ngFor="let item of data" class="list-item mb-2">
+        <div class="border-bottom">
+          <input
+            class="mr-2 border border-primary"
+            type="checkbox"
+            name="{{ item }}"
+            id="{{ item }}"
+          />
+          <label for="all">{{ item }}</label>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -107,8 +107,8 @@ table {
 
     .call-to-action {
       button {
-        color: #1B1464;
-        background: #49D3FF;
+        color: #1b1464;
+        background: #49d3ff;
         border: none;
         padding: 12px 24px;
         border-radius: 4px;
@@ -175,4 +175,28 @@ table {
 .ng-select.custom .ng-select-container {
   min-height: 0px;
   border-radius: 3px;
+}
+
+// Dialog Styles
+.dialog-container {
+  width: 1000px;
+  max-width: 90vw;
+}
+
+.content {
+  padding: 1rem 4rem 1.7rem 4rem;
+}
+
+.modal-cancel-button {
+  border: none;
+  background: none;
+  margin-right: 20px;
+}
+
+.modal-submit-button {
+  border: none;
+  background: #49d3ff;
+  padding: 14px 24px;
+  border-radius: 4px;
+  color: #1b1464;
 }
