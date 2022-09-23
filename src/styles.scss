@@ -112,6 +112,8 @@ table {
         border: none;
         padding: 12px 24px;
         border-radius: 4px;
+        white-space: nowrap;
+        margin-left: 10px;
       }
     }
   }
@@ -162,6 +164,18 @@ table {
   }
 }
 
+@media (max-width: 768px) {
+  .table-container {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .table-container {
+    padding: 1rem;
+  }
+}
+
 // Overwrite ngselect styles
 .ng-select.custom {
   border: 0px;
@@ -178,9 +192,10 @@ table {
 }
 
 // Dialog Styles
+
 .dialog-container {
-  width: 1000px;
-  max-width: 90vw;
+  width: 90vw;
+  max-width: 1000px;
 }
 
 .content {
@@ -200,4 +215,11 @@ table {
   padding: 14px 24px;
   border-radius: 4px;
   color: #1b1464;
+}
+
+@media (max-width: 576px) {
+  .content {
+    padding: 0.8rem;
+    color: #222222;
+  }
 }

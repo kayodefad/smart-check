@@ -1,33 +1,35 @@
 <div class="table-container mt-4">
-  <!-- <div class="filters-container">
-    <div class="filters">
-      <div class="search">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Enter a search keyword"
-        />
-        <img src="assets/images/search-icon.svg" alt="search icon" />
+  <div class="overflow-auto">
+    <div class="filters-container">
+      <div class="filters">
+        <div class="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Enter a search keyword"
+          />
+          <img src="assets/images/search-icon.svg" alt="search icon" />
+        </div>
+        <ng-select class="custom" [(ngModel)]="selectedApplication">
+          <ng-option *ngFor="let app of applications" [value]="app.id">{{
+            app.name
+          }}</ng-option>
+        </ng-select>
+        <ng-select class="custom" [(ngModel)]="selectedServer">
+          <ng-option *ngFor="let server of servers" [value]="server.id">{{
+            server.name
+          }}</ng-option>
+        </ng-select>
+        <ng-select class="custom" [(ngModel)]="selectedStatus">
+          <ng-option *ngFor="let status of statuses" [value]="status.id">{{
+            status.name
+          }}</ng-option>
+        </ng-select>
       </div>
-      <ng-select class="custom" [(ngModel)]="selectedApplication">
-        <ng-option *ngFor="let app of applications" [value]="app.id">{{
-          app.name
-        }}</ng-option>
-      </ng-select>
-      <ng-select class="custom" [(ngModel)]="selectedServer">
-        <ng-option *ngFor="let server of servers" [value]="server.id">{{
-          server.name
-        }}</ng-option>
-      </ng-select>
-      <ng-select class="custom" [(ngModel)]="selectedStatus">
-        <ng-option *ngFor="let status of statuses" [value]="status.id">{{
-          status.name
-        }}</ng-option>
-      </ng-select>
+      <div class="call-to-action"></div>
     </div>
-    <div class="call-to-action"></div>
-  </div> -->
+  </div>
   <div class="table-wrapper">
     <div class="table-top">
       <div class="download-icons">

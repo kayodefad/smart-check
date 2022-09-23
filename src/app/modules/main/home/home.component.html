@@ -1,83 +1,89 @@
-<div class="d-flex card-container">
-  <app-card title="Application Status">
-    <div class="d-flex justify-content-between">
-      <div class="text-center">
-        <div class="top">
-          <div
-            class="normal item d-flex align-items-center justify-content-center"
-          >
-            10
+<div class="d-flex flex-column flex-md-row justify-content-between card-container">
+  <div style="flex: 1 1 0">
+    <app-card title="Application Status">
+      <div class="d-flex justify-content-between">
+        <div class="text-center">
+          <div class="top">
+            <div
+              class="normal item d-flex align-items-center justify-content-center"
+            >
+              10
+            </div>
           </div>
+          <div class="bottom">All</div>
         </div>
-        <div class="bottom">All</div>
-      </div>
-      <div class="text-center">
-        <div class="top">
-          <div
-            class="available item d-flex align-items-center justify-content-center"
-          >
-            6
+        <div class="text-center">
+          <div class="top">
+            <div
+              class="available item d-flex align-items-center justify-content-center"
+            >
+              6
+            </div>
           </div>
+          <div class="bottom">Available</div>
         </div>
-        <div class="bottom">Available</div>
-      </div>
-      <div class="text-center">
-        <div class="top">
-          <div
-            class="critical item d-flex align-items-center justify-content-center"
-          >
-            4
+        <div class="text-center">
+          <div class="top">
+            <div
+              class="critical item d-flex align-items-center justify-content-center"
+            >
+              4
+            </div>
           </div>
+          <div class="bottom">Critical</div>
         </div>
-        <div class="bottom">Critical</div>
       </div>
-    </div>
-  </app-card>
-  <app-card title="Servers">
-    <div class="d-flex justify-content-between">
-      <div class="text-center">
-        <div class="top">
-          <div
-            class="normal item d-flex align-items-center justify-content-center"
-          >
-            4
+    </app-card>
+  </div>
+  <div style="flex: 1 1 0">
+    <app-card title="Servers">
+      <div class="d-flex justify-content-between">
+        <div class="text-center">
+          <div class="top">
+            <div
+              class="normal item d-flex align-items-center justify-content-center"
+            >
+              4
+            </div>
           </div>
+          <div class="bottom">All</div>
         </div>
-        <div class="bottom">All</div>
-      </div>
-      <div class="text-center">
-        <div class="top">
-          <div
-            class="available item d-flex align-items-center justify-content-center"
-          >
-            2
+        <div class="text-center">
+          <div class="top">
+            <div
+              class="available item d-flex align-items-center justify-content-center"
+            >
+              2
+            </div>
           </div>
+          <div class="bottom">Active</div>
         </div>
-        <div class="bottom">Active</div>
-      </div>
-      <div class="text-center">
-        <div class="top">
-          <div
-            class="inactive item d-flex align-items-center justify-content-center"
-          >
-            2
+        <div class="text-center">
+          <div class="top">
+            <div
+              class="inactive item d-flex align-items-center justify-content-center"
+            >
+              2
+            </div>
           </div>
+          <div class="bottom">Inactive</div>
         </div>
-        <div class="bottom">Inactive</div>
       </div>
-    </div>
-  </app-card>
-  <app-card title="Health check counts">
-    <div class="">
-      <div class="card-item">
-        <div
-          class="top health-check d-flex align-items-center justify-content-center"
-        >
-          <div>68</div>
+    </app-card>
+  </div>
+  <div style="flex: 1 1 0">
+    <app-card title="Health check counts">
+      <div class="">
+        <div class="card-item">
+          <div
+            class="top health-check d-flex align-items-center justify-content-center"
+          >
+            <div>68</div>
+          </div>
+          <div class="bottom text-center">Counts</div>
         </div>
-        <div class="bottom text-center">Counts</div>
       </div>
-    </div>
-  </app-card>
+    </app-card>
+  </div>
 </div>
 <app-home-table></app-home-table>

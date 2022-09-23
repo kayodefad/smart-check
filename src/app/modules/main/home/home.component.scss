@@ -5,6 +5,11 @@ div {
 
 .card-container {
   gap: 15px;
+  width: 87%;
+
+  @media (max-width: 992px) {
+    width: 100%;
+  }
 }
 
 .top {

@@ -1,23 +1,25 @@
 <div class="table-container mt-4">
-  <div class="filters-container">
-    <div class="filters">
-      <div class="search">
-        <input
-          type="search"
-          name="search"
-          id="search"
-          placeholder="Enter a search keyword"
-        />
-        <img src="assets/images/search-icon.svg" alt="search icon" />
+  <div class="overflow-auto">
+    <div class="filters-container">
+      <div class="filters">
+        <div class="search">
+          <input
+            type="search"
+            name="search"
+            id="search"
+            placeholder="Enter a search keyword"
+          />
+          <img src="assets/images/search-icon.svg" alt="search icon" />
+        </div>
+        <ng-select class="custom" [(ngModel)]="selectedStatus">
+          <ng-option *ngFor="let status of statuses" [value]="status.id">{{
+            status.name
+          }}</ng-option>
+        </ng-select>
       </div>
-      <ng-select class="custom" [(ngModel)]="selectedStatus">
-        <ng-option *ngFor="let status of statuses" [value]="status.id">{{
-          status.name
-        }}</ng-option>
-      </ng-select>
-    </div>
-    <div class="call-to-action">
-      <button (click)="openDialog()">Add Application</button>
+      <div class="call-to-action">
+        <button (click)="openDialog()">Add Application</button>
+      </div>
     </div>
   </div>
   <div class="table-wrapper">
