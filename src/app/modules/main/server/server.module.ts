@@ -3,9 +3,11 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { ROUTES } from './server.routes';
 import { ServerComponent } from './server.component';
+import { ServerTableComponent } from './server-table/server-table.component';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
-  declarations: [ServerComponent],
-  imports: [CommonModule, RouterModule.forChild(ROUTES)],
+  declarations: [ServerComponent, ServerTableComponent],
+  imports: [CommonModule, SharedModule, RouterModule.forChild(ROUTES)],
 })
 export class ServerModule {}
