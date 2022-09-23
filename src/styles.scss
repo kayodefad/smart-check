@@ -124,6 +124,19 @@ table {
     }
   }
 
+  @media (max-width: 576px) {
+    .filters-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .call-to-action {
+      button {
+        margin-left: 0;
+      }
+    }
+  }
+
   .small-circle {
     width: 10px;
     height: 10px;
