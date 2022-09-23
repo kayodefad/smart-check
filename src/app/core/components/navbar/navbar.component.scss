@@ -5,6 +5,18 @@ header {
   img {
     width: 150px;
   }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    span {
+      width: 20px;
+      height: 2px;
+      background-color: white;
+    }
+  }
 }
 
 nav {
@@ -26,7 +38,7 @@ nav {
         }
 
         img {
-            width: 15px;
+          width: 15px;
         }
       }
     }
@@ -36,5 +48,19 @@ nav {
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  nav {
+    display: none;
+    ul {
+      gap: 20px;
+      padding-bottom: 20px;
+    }
+
+    &.show {
+      display: block;
+    }
   }
 }

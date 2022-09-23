@@ -2,15 +2,24 @@ div {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .card-container {
   gap: 15px;
+}
 
-  .item {
+.top {
+  height: 55px;
+  margin-bottom: 10px !important;
+
+  &.health-check {
+    color: #1b1464;
+    font-size: 45px;
   }
 
-  .top {
-    width: 3.5vw;
-    height: 3.5vw;
+  .item {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
     border: none;
     color: #fff;
 
@@ -28,17 +37,12 @@ div {
     }
 
     &.inactive {
-        background-color: #E0B237;
-    }
-
-    &.health-check {
-        color: #1B1464;
-        font-size: 45px;
+      background-color: #e0b237;
     }
   }
+}
 
-  .bottom {
-    color: #262626;
-    font-size: 12px;
-  }
+.bottom {
+  color: #262626;
+  font-size: 12px;
 }

@@ -1,7 +1,12 @@
-<header class="px-5 d-flex align-items-center">
+<header class="px-5 d-flex align-items-center justify-content-between">
   <img src="/assets/images/logo.svg" alt="logo" />
+  <div (click)="toggleMenu()" class="menu d-md-none">
+    <span></span><span></span><span></span>
+  </div>
 </header>
-<nav class="px-5 d-flex align-items-center justify-content-between">
+<nav
+  class="wide px-5 d-none d-md-flex align-items-center justify-content-between"
+>
   <ul class="list-unstyled d-flex align-items-center m-0">
     <li>
       <a
@@ -45,4 +50,52 @@
       Check Health Status
     </button>
   </div>
+</nav>
+
+<nav [ngClass]="{ 'mobile px-5 d-md-none': true, show: showMenu }">
+  <ul class="list-unstyled d-flex d-md-none flex-column m-0">
+    <li>
+      <a
+        class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
+        routerLink="/dashboard/home"
+        routerLinkActive="active"
+        ><img
+          class="nav-icon"
+          src="/assets/images/home-icon.svg"
+          alt="home icon"
+        /><span class="ml-1">Home</span></a
+      >
+    </li>
+    <li>
+      <a
+        class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
+        routerLink="/dashboard/server"
+        routerLinkActive="active"
+        ><img
+          class="nav-icon"
+          src="/assets/images/server-icon.svg"
+          alt="server icon"
+        /><span class="ml-1">Server</span></a
+      >
+    </li>
+    <li>
+      <a
+        class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
+        routerLink="/dashboard/application"
+        routerLinkActive="active"
+        ><img
+          class="nav-icon"
+          src="/assets/images/app-icon.svg"
+          alt="app icon"
+        /><span class="ml-1">Application</span></a
+      >
+    </li>
+    <li>
+      <div>
+        <button class="btn btn-primary px-4" (click)="openDialog()">
+          Check Health Status
+        </button>
+      </div>
+    </li>
+  </ul>
 </nav>

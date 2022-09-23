@@ -1,0 +1,98 @@
+<div class="dialog-container">
+  <h2 class="font-weight-bold" mat-dialog-title>Define Application</h2>
+  <div class="content app-content">
+    <mat-dialog-content class="mat-typography">
+      <form>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-3" for="appname">Application Name</label>
+          <input
+            class="col-7 form-input"
+            type="text"
+            name="appname"
+            id="appname"
+          />
+        </div>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-3" for="apptype">Application Type</label>
+          <input
+            class="col-7 form-input"
+            type="text"
+            name="apptype"
+            id="apptype"
+          />
+        </div>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-3" for="appdcsc">Application Dcsc</label>
+          <input
+            class="col-7 form-input"
+            type="text"
+            name="appdcsc"
+            id="appdcsc"
+          />
+        </div>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-3" for="appport">Application Port</label>
+          <input
+            class="col-7 form-input"
+            type="text"
+            name="appport"
+            id="appport"
+          />
+        </div>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-3" for="endpoint">End point</label>
+          <input
+            class="col-7 form-input"
+            type="text"
+            name="endpoint"
+            id="endpoint"
+          />
+        </div>
+      </form>
+      <!-- <app-modal-template
+        [title]="'Application'"
+        [data]="servers"
+      ></app-modal-template> -->
+      <div class="row mt-3">
+        <div class="col-3">Host/Server</div>
+        <div class="col-7">
+          <div>
+            <input
+              class="mr-2 border border-primary"
+              type="checkbox"
+              name="all"
+              id="all"
+            />
+            <label for="all">All server</label>
+          </div>
+          <div class="mt-1">Select Applicaion</div>
+          <ul class="list border rounded px-4 py-3 mt-2">
+            <li *ngFor="let item of servers" class="list-item mb-2">
+              <div class="border-bottom">
+                <input
+                  class="mr-2 border border-primary"
+                  type="checkbox"
+                  name="{{ item }}"
+                  id="{{ item }}"
+                />
+                <label for="all">{{ item }}</label>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </mat-dialog-content>
+    <div class="mt-5">
+      <mat-dialog-actions align="end">
+        <button class="modal-cancel-button" mat-dialog-close>Cancel</button>
+        <button
+          class="modal-submit-button"
+          [mat-dialog-close]="true"
+          cdkFocusInitial
+        >
+          Create
+        </button>
+      </mat-dialog-actions>
+    </div>
+  </div>
+</div>

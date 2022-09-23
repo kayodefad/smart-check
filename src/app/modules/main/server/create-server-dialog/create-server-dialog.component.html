@@ -1,0 +1,48 @@
+<div class="dialog-container">
+  <h2 class="font-weight-bold" mat-dialog-title>Creace a server</h2>
+  <div class="content">
+    <mat-dialog-content class="mat-typography">
+      <form>
+        <h3>Enter Server Details</h3>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-2" for="name">Server Name</label>
+          <input class="col-6 form-input" type="text" name="name" id="name" />
+        </div>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-2" for="serverip">Server IP</label>
+          <input
+            class="col-6 form-input"
+            type="text"
+            name="serverip"
+            id="serverip"
+          />
+        </div>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-2" for="cpu">CPU</label>
+          <input class="col-6 form-input" type="text" name="cpu" id="cpu" />
+        </div>
+        <div class="row align-items-center d-flex mt-3">
+          <label class="col-2" for="storage">Storage</label>
+          <input
+            class="col-6 form-input"
+            type="text"
+            name="storage"
+            id="storage"
+          />
+        </div>
+      </form>
+    </mat-dialog-content>
+    <div class="mt-5">
+      <mat-dialog-actions align="end">
+        <button class="modal-cancel-button" mat-dialog-close>Cancel</button>
+        <button
+          class="modal-submit-button"
+          [mat-dialog-close]="true"
+          cdkFocusInitial
+        >
+          Create
+        </button>
+      </mat-dialog-actions>
+    </div>
+  </div>
+</div>

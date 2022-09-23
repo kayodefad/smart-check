@@ -16,7 +16,9 @@
         }}</ng-option>
       </ng-select>
     </div>
-    <div class="call-to-action"><button>Create Server</button></div>
+    <div class="call-to-action">
+      <button (click)="openDialog()">Create Server</button>
+    </div>
   </div>
   <div class="table-wrapper">
     <div class="table-top">
@@ -26,7 +28,7 @@
       </div>
       <span>Showing 10 of 5000 Entries</span>
     </div>
-    <table mat-table [dataSource]="dataSource">
+    <div class="overflow-auto"><table mat-table [dataSource]="dataSource">
       <ng-container matColumnDef="serial_number">
         <th mat-header-cell *matHeaderCellDef>s/n</th>
         <td mat-cell *matCellDef="let element">{{ element.serial_number }}</td>
@@ -94,7 +96,7 @@
 
       <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
       <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
-    </table>
+    </table></div>
 
     <div class="mt-5">
       <mat-paginator

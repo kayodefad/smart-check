@@ -8,6 +8,7 @@ import { HealthStatusDialogComponent } from './health-status-dialog/health-statu
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent {
+  showMenu: boolean = false;
   constructor(private dialog: MatDialog) {}
 
   openDialog() {
@@ -16,5 +17,9 @@ export class NavbarComponent {
     dialogRef.afterClosed().subscribe((result) => {
       console.log(`Dialog result: ${result}`);
     });
+  }
+
+  toggleMenu() {
+    this.showMenu = !this.showMenu;
   }
 }
