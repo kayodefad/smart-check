@@ -1,1 +1,78 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+
+@import "~@ng-select/ng-select/themes/default.theme.css";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: muli, sans-serif !important;
+  background-color: #f1f3f5;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.btn {
+  border-radius: 4px;
+  border: none;
+  &.btn-primary {
+    background-color: #49d3ff;
+    color: #1b1464;
+  }
+}
+
+// Overwrite material table styles
+table {
+  width: 100%;
+  min-width: 1000px;
+}
+
+.mat-table {
+  .mat-header-row {
+    height: 45px;
+    background: #f3f3f7 !important;
+    border-bottom: 1px solid #b3b3b480 !important;
+
+    .mat-header-cell {
+      text-align: center;
+      text-transform: uppercase;
+      color: #000b14;
+      font-weight: normal;
+    }
+  }
+  .mat-row {
+    height: 50px;
+    .mat-cell {
+      text-align: center;
+      color: #222222;
+      font-size: 12px;
+      font-weight: normal !important;
+    }
+  }
+}
+
+// Overwrite ngselect styles
+.ng-select.custom {
+  border: 0px;
+  min-height: 0px;
+  border-radius: 3px;
+  width: 180px;
+  font-size: 11px;
+  color: #777777;
+}
+
+.ng-select.custom .ng-select-container {
+  min-height: 0px;
+  border-radius: 3px;
+}

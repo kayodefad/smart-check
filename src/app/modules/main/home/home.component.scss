@@ -1,0 +1,44 @@
+div {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.card-container {
+  gap: 15px;
+
+  .item {
+  }
+
+  .top {
+    width: 3.5vw;
+    height: 3.5vw;
+    border: none;
+    color: #fff;
+
+    &.normal {
+      border: 1px solid #1b1464;
+      color: #1b1464;
+    }
+
+    &.available {
+      background-color: #24c977;
+    }
+
+    &.critical {
+      background-color: #ff4343f7;
+    }
+
+    &.inactive {
+        background-color: #E0B237;
+    }
+
+    &.health-check {
+        color: #1B1464;
+        font-size: 45px;
+    }
+  }
+
+  .bottom {
+    color: #262626;
+    font-size: 12px;
+  }
+}

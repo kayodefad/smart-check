@@ -1,0 +1,95 @@
+.table-container {
+  background: #fff;
+  padding: 3rem;
+
+  .filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 14px;
+
+    .filters {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .search {
+        height: 35px;
+        position: relative;
+
+        input {
+          height: 100%;
+          border: none;
+          background-color: #f3f3f7;
+          padding: 0 30px;
+          width: 300px;
+          font-size: 11.5px;
+
+          &:focus {
+            outline: none;
+          }
+        }
+
+        img {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          left: 10px;
+          width: 15px;
+        }
+      }
+    }
+  }
+
+  .table-wrapper {
+    border: 1px solid #d3d3d3;
+  }
+
+  .table-top {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    height: 50px;
+    font-size: 11px;
+    padding: 0 2.5rem;
+
+    .download-icons {
+      display: flex;
+      gap: 10px;
+      img {
+        width: 18px;
+      }
+    }
+  }
+
+  .tick {
+    width: 18px;
+    margin-right: 10px;
+  }
+
+  .small-circle {
+    width: 10px;
+    height: 10px;
+    background-color: #24c977;
+    border-radius: 50%;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .action {
+    background-color: #49d3ff;
+    border-radius: 4px;
+    padding: 5px 14px;
+    color: #1b1464;
+    font-size: 12px;
+  }
+  .servers-mapped {
+    color: #499dff;
+  }
+}
+
+.paginator-container {
+  margin-top: 60px;
+}

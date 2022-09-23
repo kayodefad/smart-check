@@ -1,0 +1,43 @@
+<header class="px-5 d-flex align-items-center">
+  <img src="/assets/images/logo.svg" alt="logo" />
+</header>
+<nav class="px-5 d-flex align-items-center justify-content-between">
+  <ul class="list-unstyled d-flex align-items-center m-0">
+    <li>
+      <a
+        class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
+        routerLink="/dashboard/home"
+        routerLinkActive="active"
+        ><img class="nav-icon" src="/assets/images/home-icon.svg" alt="home icon" /><span
+          class="ml-1"
+          >Home</span
+        ></a
+      >
+    </li>
+    <li>
+      <a
+        class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
+        routerLink="/dashboard/server"
+        routerLinkActive="active"
+        ><img class="nav-icon" src="/assets/images/server-icon.svg" alt="server icon" /><span
+          class="ml-1"
+          >Server</span
+        ></a
+      >
+    </li>
+    <li>
+      <a
+        class="d-flex align-items-center cursor-pointer px-1 text-decoration-none"
+        routerLink="/dashboard/application"
+        routerLinkActive="active"
+        ><img class="nav-icon" src="/assets/images/app-icon.svg" alt="app icon" /><span
+          class="ml-1"
+          >Application</span
+        ></a
+      >
+    </li>
+  </ul>
+  <div>
+    <button class="btn btn-primary px-4">Check Health Status</button>
+  </div>
+</nav>
